@@ -2,6 +2,8 @@
 using BISolutionsProject.Services.Settings;
 using BISolutionsProject.Services.FirstApp;
 using BISolutionsProject.Services.FirstAppResponse;
+using BISolutionsProject.Services.SecondApp;
+using BISolutionsProject.Services.SecondAppResponse;
 
 namespace BISolutionsProject.Api;
 
@@ -22,7 +24,9 @@ public static class Bootstrapper
             .AddApiSpecialSettings()
             .AddSwaggerSettings()
             .AddFirstAppService()
-            .AddFirstAppResponseService();
+            .AddFirstAppResponseService()
+            .AddSecondAppService()
+            .AddSecondAppResponseService();
 
         return services;
     }

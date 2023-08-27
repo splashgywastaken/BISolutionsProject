@@ -18,7 +18,7 @@ namespace BISolutionsProject.Api.Controllers.SumOfTwo;
 [Produces("application/json")]
 [Route("api/v{version:apiVersion}/firstApp")]
 [ApiVersion("0.1")]
-public class SumOfTwoController : Controller
+public class SumOfTwoController : ControllerBase
 {
     private readonly IMapper _mapper;
     private readonly ILogger<SumOfTwoController> _logger;

@@ -1,0 +1,15 @@
+version: '3.4'
+
+services:
+  bisolutionsproject.api:
+    ports:
+      - "10000:80"
+    env_file:
+      - env.api
+    networks: 
+      - shared_bisolutionsproject_net
+
+networks:
+  shared_bisolutionsproject_net:
+    name: bisolutionsproject
+    driver: bridge

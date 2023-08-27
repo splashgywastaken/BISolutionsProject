@@ -21,9 +21,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BISolutionsProject.Shared.C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BISolutionsProject.Api.Settings", "BISolutionsProject\Systems\Api\BISolutionsProject.Api.Settings\BISolutionsProject.Api.Settings.csproj", "{A82D7F20-51D2-4450-8989-C5A1D9552E06}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BISolutionsProject.Services.FirstApp", "BISolutionsProject\Services\BISolutionsProject.Services.FirstApp\BISolutionsProject.Services.FirstApp.csproj", "{09C29C27-8336-41E3-A0CA-EBA37C53EA44}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BISolutionsProject.Services.FirstApp", "BISolutionsProject\Services\BISolutionsProject.Services.FirstApp\BISolutionsProject.Services.FirstApp.csproj", "{09C29C27-8336-41E3-A0CA-EBA37C53EA44}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BISolutionsProject.Services.FirstAppResponse", "BISolutionsProject\Services\BISolutionsProject.Services.FirstAppResponse\BISolutionsProject.Services.FirstAppResponse.csproj", "{E27E2A0E-C3A0-4BBE-B074-38A1FC5D9246}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BISolutionsProject.Services.FirstAppResponse", "BISolutionsProject\Services\BISolutionsProject.Services.FirstAppResponse\BISolutionsProject.Services.FirstAppResponse.csproj", "{E27E2A0E-C3A0-4BBE-B074-38A1FC5D9246}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BISolutionsProject.Services.SecondApp", "BISolutionsProject\Services\BISolutionsProject.Services.SecondApp\BISolutionsProject.Services.SecondApp.csproj", "{4B4AB356-2FD3-4A88-8C5E-661EC6B3B51E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BISolutionsProject.Services.SecondAppResponse", "BISolutionsProject\Services\BISolutionsProject.Services.SecondAppResponse\BISolutionsProject.Services.SecondAppResponse.csproj", "{E879E0FB-9009-4940-B0E1-9A6C28797FE3}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{3BE484F8-CA6D-485C-B975-1DF0450EEBF7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -59,6 +65,18 @@ Global
 		{E27E2A0E-C3A0-4BBE-B074-38A1FC5D9246}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E27E2A0E-C3A0-4BBE-B074-38A1FC5D9246}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E27E2A0E-C3A0-4BBE-B074-38A1FC5D9246}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B4AB356-2FD3-4A88-8C5E-661EC6B3B51E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B4AB356-2FD3-4A88-8C5E-661EC6B3B51E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B4AB356-2FD3-4A88-8C5E-661EC6B3B51E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B4AB356-2FD3-4A88-8C5E-661EC6B3B51E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E879E0FB-9009-4940-B0E1-9A6C28797FE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E879E0FB-9009-4940-B0E1-9A6C28797FE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E879E0FB-9009-4940-B0E1-9A6C28797FE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E879E0FB-9009-4940-B0E1-9A6C28797FE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BE484F8-CA6D-485C-B975-1DF0450EEBF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BE484F8-CA6D-485C-B975-1DF0450EEBF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BE484F8-CA6D-485C-B975-1DF0450EEBF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BE484F8-CA6D-485C-B975-1DF0450EEBF7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -72,6 +90,8 @@ Global
 		{A82D7F20-51D2-4450-8989-C5A1D9552E06} = {425B5FD8-3A7B-47BC-B820-EF6B6039E395}
 		{09C29C27-8336-41E3-A0CA-EBA37C53EA44} = {4A51AEB7-8280-4C55-939D-66A8321FADD5}
 		{E27E2A0E-C3A0-4BBE-B074-38A1FC5D9246} = {4A51AEB7-8280-4C55-939D-66A8321FADD5}
+		{4B4AB356-2FD3-4A88-8C5E-661EC6B3B51E} = {4A51AEB7-8280-4C55-939D-66A8321FADD5}
+		{E879E0FB-9009-4940-B0E1-9A6C28797FE3} = {4A51AEB7-8280-4C55-939D-66A8321FADD5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {675F770A-DA66-4E11-A2D8-E8986E940D70}

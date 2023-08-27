@@ -6,17 +6,23 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
     <DocumentationFile>api.xml</DocumentationFile>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerfileContext>..\..\..\..</DockerfileContext>
+    <DockerComposeProjectPath>..\..\..\..\docker-compose.dcproj</DockerComposeProjectPath>
   </PropertyGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\..\..\Services\BISolutionsProject.Services.FirstAppResponse\BISolutionsProject.Services.FirstAppResponse.csproj" />
     <ProjectReference Include="..\..\..\Services\BISolutionsProject.Services.FirstApp\BISolutionsProject.Services.FirstApp.csproj" />
+    <ProjectReference Include="..\..\..\Services\BISolutionsProject.Services.SecondAppResponse\BISolutionsProject.Services.SecondAppResponse.csproj" />
+    <ProjectReference Include="..\..\..\Services\BISolutionsProject.Services.SecondApp\BISolutionsProject.Services.SecondApp.csproj" />
     <ProjectReference Include="..\..\..\Services\BISolutionsProject.Services.Settings\BISolutionsProject.Services.Settings.csproj" />
     <ProjectReference Include="..\..\..\Shared\BISolutionsProject.Shared.Common\BISolutionsProject.Shared.Common.csproj" />
     <ProjectReference Include="..\BISolutionsProject.Api.Settings\BISolutionsProject.Api.Settings.csproj" />
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Controllers\Palindrom\Models\" />
     <Folder Include="Controllers\SumOfTwo\Models\" />
     <Folder Include="Pages\SumOfTwo\" />
   </ItemGroup>

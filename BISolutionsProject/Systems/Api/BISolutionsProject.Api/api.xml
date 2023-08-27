@@ -64,6 +64,36 @@
             <param name="builder"></param>
             <returns></returns>
         </member>
+        <member name="T:BISolutionsProject.Api.Controllers.Palindrom.Models.PalindromCheckResponse">
+            <summary>
+            A model used for response in PalindromController methods
+            </summary>
+        </member>
+        <member name="P:BISolutionsProject.Api.Controllers.Palindrom.Models.PalindromCheckResponse.IsPalindrom">
+            <summary>
+            Check for if a string is a palindrom or not
+            </summary>
+        </member>
+        <member name="T:BISolutionsProject.Api.Controllers.Palindrom.PalindromController">
+            <summary>
+            A controller used for second task 
+            </summary>
+        </member>
+        <member name="M:BISolutionsProject.Api.Controllers.Palindrom.PalindromController.#ctor(Microsoft.Extensions.Logging.ILogger{BISolutionsProject.Api.Controllers.Palindrom.PalindromController},AutoMapper.IMapper)">
+            <summary>
+            A constructor used for intialization of PalindromController through DI
+            </summary>
+            <param name="logger"></param>
+            <param name="mapper"></param>
+        </member>
+        <member name="M:BISolutionsProject.Api.Controllers.Palindrom.PalindromController.CheckStringForBeingPalindrom(System.String)">
+            <summary>
+            Method used to check a string for being a palinrom 
+            </summary>
+            <param name="stringToCheck"></param>
+            <returns></returns>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
         <member name="T:BISolutionsProject.Api.Controllers.SumOfTwo.Models.SumOfNumbersResponse">
             <summary>
             Model used for response in controller

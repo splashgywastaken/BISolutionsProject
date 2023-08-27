@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  bisolutionsproject.api:
+    image: ${DOCKER_REGISTRY-}bisolutionsprojectapi
+    build:
+      context: .
+      dockerfile: BISolutionsProject/Systems/Api/BISolutionsProject.Api/Dockerfile
