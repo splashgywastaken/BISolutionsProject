@@ -8,16 +8,6 @@ public class SwaggerSettings
     public bool Enabled { get; private set; }
 
     /// <summary>
-    /// Client Id to use in OAuth
-    /// </summary>
-    public string OAuthClientId { get; private set; } = null!;
-
-    /// <summary>
-    /// Client secret to use in OAuth
-    /// </summary>
-    public string OAuthClientSecret { get; private set; } = null!;
-
-    /// <summary>
     /// Default constructor that sets check as false
     /// </summary>
     public SwaggerSettings()

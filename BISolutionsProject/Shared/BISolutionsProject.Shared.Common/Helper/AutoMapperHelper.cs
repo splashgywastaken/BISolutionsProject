@@ -15,8 +15,9 @@ public static class AutoMappersRegisterHelper
     /// <param name="services"></param>
     public static void Register(IServiceCollection services)
     {
+        var assembliestemp = AppDomain.CurrentDomain.GetAssemblies();
         var assemblies = AppDomain.CurrentDomain.GetAssemblies()
-            .Where(s => s.FullName != null && s.FullName.ToLower().StartsWith("novarecipesproject."));
+            .Where(s => s.FullName != null && s.FullName.ToLower().StartsWith("bisolutionsproject."));
 
         services.AddAutoMapper(assemblies);
     }

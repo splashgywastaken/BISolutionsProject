@@ -9,11 +9,11 @@
     }
   },
   "profiles": {
-    "http": {
+    "BiSolutionProject.Api": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,
-      "launchUrl": "bisolutionsproject",
+      "launchUrl": "",
       "applicationUrl": "http://localhost:5055",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"

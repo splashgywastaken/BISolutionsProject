@@ -4,6 +4,7 @@ using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.Filters;
 using Swashbuckle.AspNetCore.SwaggerGen;
 using Swashbuckle.AspNetCore.SwaggerUI;
+using System.Reflection;
 
 namespace BISolutionsProject.Api.Configuration;
 
@@ -54,6 +55,10 @@ public static class SwaggerConfiguration
 
             options.ExampleFilters();
         });
+
+        services.AddSwaggerExamplesFromAssemblies(Assembly.GetEntryAssembly());
+
+        services.AddSwaggerGenNewtonsoftSupport();
 
         return services;
     }

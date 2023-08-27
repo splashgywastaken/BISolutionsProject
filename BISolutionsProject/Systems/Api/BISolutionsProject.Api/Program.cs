@@ -11,20 +11,23 @@ var swaggerSettings = Settings.Load<SwaggerSettings>("Swagger");
 
 var services = builder.Services;
 
-services.AddApiVersioning();
-services.AddAppSwagger(swaggerSettings);
+// Needs to be here because either way assemblies are not loaded in
+// and application can't get an info for AutoMapper configuration
+services.RegisterAppServices();
+
+services.AddAppVersioning();
 services.AddAppHealthChecks();
+services.AddAppSwagger(swaggerSettings);
+// Loads configuration from loaded assemblies and adds an AutoMapper to this app
 services.AddAppAutoMappers();
 
 services.AddAppControllerAndViews();
-
-services.RegisterAppServices();
 
 var app = builder.Build();
 
 app.UseAppHealthChecks();
 
-app.UseSwagger();
+app.UseAppSwagger();
 
 app.UseAppControllerAndViews();
 

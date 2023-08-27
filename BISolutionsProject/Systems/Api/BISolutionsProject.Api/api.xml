@@ -1,0 +1,153 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BISolutionsProject.Api</name>
+    </assembly>
+    <members>
+        <member name="T:BISolutionsProject.Api.Bootstrapper">
+            <summary>
+            Bootsrapper for BISolutionsProjec.Api
+            </summary>
+        </member>
+        <member name="M:BISolutionsProject.Api.Bootstrapper.RegisterAppServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Adds all of the services required to run the app
+            </summary>
+            <param name="services"></param>
+            <returns></returns>
+        </member>
+        <member name="T:BISolutionsProject.Api.Configuration.AutoMapperConfiguration">
+            <summary>
+            AutoMapper configuration
+            </summary>
+        </member>
+        <member name="M:BISolutionsProject.Api.Configuration.AutoMapperConfiguration.AddAppAutoMappers(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Add automappers
+            </summary>
+            <param name="services">Services collection</param>
+        </member>
+        <member name="T:BISolutionsProject.Api.Configuration.ControllerAndViewsConfiguration">
+            <summary>
+            Class to use in DI in Program
+            </summary>
+        </member>
+        <member name="M:BISolutionsProject.Api.Configuration.ControllerAndViewsConfiguration.AddAppControllerAndViews(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            DI for services
+            </summary>
+            <param name="services"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BISolutionsProject.Api.Configuration.ControllerAndViewsConfiguration.UseAppControllerAndViews(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder)">
+            <summary>
+            DI for builder
+            </summary>
+            <param name="app"></param>
+            <returns></returns>
+        </member>
+        <member name="T:BISolutionsProject.Api.Configuration.MiddlewaresConfiguration">
+            <summary>
+            Middleware configuration class
+            </summary>
+        </member>
+        <member name="M:BISolutionsProject.Api.Configuration.MiddlewaresConfiguration.UseAppMiddlewares(Microsoft.AspNetCore.Builder.IApplicationBuilder)">
+            <summary>
+            Method for DI to use custom middlewares
+            </summary>
+            <param name="app"></param>
+        </member>
+        <member name="M:BISolutionsProject.Api.Configuration.ValidatorConfiguration.AddAppValidator(Microsoft.Extensions.DependencyInjection.IMvcBuilder)">
+            <summary>
+            Method for DI
+            </summary>
+            <param name="builder"></param>
+            <returns></returns>
+        </member>
+        <member name="T:BISolutionsProject.Api.Controllers.SumOfTwo.Models.SumOfNumbersResponse">
+            <summary>
+            Model used for response in controller
+            </summary>
+        </member>
+        <member name="P:BISolutionsProject.Api.Controllers.SumOfTwo.Models.SumOfNumbersResponse.SumOfNumbers">
+            <summary>
+            Sum of numbers itself
+            </summary>
+        </member>
+        <member name="T:BISolutionsProject.Api.Controllers.SumOfTwo.Models.SumOfNumbersResponseProfile">
+            <summary>
+            Pofile for ListOfNumbersResponseModel mapping
+            </summary>
+        </member>
+        <member name="M:BISolutionsProject.Api.Controllers.SumOfTwo.Models.SumOfNumbersResponseProfile.#ctor">
+            <summary>
+            A constructor with defenitions for mapping profiles
+            </summary>
+        </member>
+        <member name="T:BISolutionsProject.Api.Controllers.SumOfTwo.SumOfTwoController">
+            <summary>
+            Controller thats whole purpose is to perform actions related to first task
+            </summary>
+        </member>
+        <member name="M:BISolutionsProject.Api.Controllers.SumOfTwo.SumOfTwoController.#ctor(AutoMapper.IMapper,Microsoft.Extensions.Logging.ILogger{BISolutionsProject.Api.Controllers.SumOfTwo.SumOfTwoController},BISolutionsProject.Services.FirstApp.IFirstAppService,BISolutionsProject.Services.FirstAppResponse.IFirstAppResponseService)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="mapper"></param>
+            <param name="logger"></param>
+            <param name="firstAppService"></param>
+            <param name="firstAppResponseService"></param>
+        </member>
+        <member name="M:BISolutionsProject.Api.Controllers.SumOfTwo.SumOfTwoController.GetSumOfTwo(BISolutionsProject.Services.FirstApp.Models.ListOfNumbersModel)">
+            <summary>
+            Executes main logic for controller
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:BISolutionsProject.Api.Middleware.ExceptionsMiddleware">
+            <summary>
+            Basic middleware exception
+            </summary>
+        </member>
+        <member name="M:BISolutionsProject.Api.Middleware.ExceptionsMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="next"></param>
+        </member>
+        <member name="M:BISolutionsProject.Api.Middleware.ExceptionsMiddleware.InvokeAsync(Microsoft.AspNetCore.Http.HttpContext)">
+            <summary>
+            Main async method
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="T:BISolutionsProject.Api.Pages.IndexModel">
+            <summary>
+            Index page model
+            </summary>
+        </member>
+        <member name="P:BISolutionsProject.Api.Pages.IndexModel.OpenApiEnabled">
+            <summary>
+            Toggle for OpenAPI to be enabled
+            </summary>
+        </member>
+        <member name="P:BISolutionsProject.Api.Pages.IndexModel.Version">
+            <summary>
+            Data about version
+            </summary>
+        </member>
+        <member name="P:BISolutionsProject.Api.Pages.IndexModel.HelloMessage">
+            <summary>
+            Just hello message, nothing more
+            </summary>
+        </member>
+        <member name="M:BISolutionsProject.Api.Pages.IndexModel.#ctor(BISolutionsProject.Services.Settings.SwaggerSettings,BISolutionsProject.Api.Settings.ApiSpecialSettings)">
+            <inheritdoc />
+        </member>
+        <member name="M:BISolutionsProject.Api.Pages.IndexModel.OnGet">
+            <summary>
+            Method used if something gets property data
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -7,17 +7,23 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Systems", "Systems", "{C946
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{425B5FD8-3A7B-47BC-B820-EF6B6039E395}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BISolutionsProject.Api", "BISolutionsProject\Systems\Api\BISolutionsProject.Api\BISolutionsProject.Api.csproj", "{6ACD038A-1FFC-4308-8589-CE2B6DD201E9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BISolutionsProject.Api", "BISolutionsProject\Systems\Api\BISolutionsProject.Api\BISolutionsProject.Api.csproj", "{6ACD038A-1FFC-4308-8589-CE2B6DD201E9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{4A51AEB7-8280-4C55-939D-66A8321FADD5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BISolutionsProject.Services.Settings", "BISolutionsProject\Services\BISolutionsProject.Services.Settings\BISolutionsProject.Services.Settings.csproj", "{2AB2D502-DD4F-4BC3-BF05-BC320769D147}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BISolutionsProject.Services.Settings", "BISolutionsProject\Services\BISolutionsProject.Services.Settings\BISolutionsProject.Services.Settings.csproj", "{2AB2D502-DD4F-4BC3-BF05-BC320769D147}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{8B84C5B2-DBBA-4FB5-A43C-152D3D423EDF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BISolutionsProject.Settings", "BISolutionsProject\Shared\BISolutions.Settings\BISolutionsProject.Settings.csproj", "{05EC8AB0-E6BD-4D42-8203-BBE817C88B01}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BISolutionsProject.Settings", "BISolutionsProject\Shared\BISolutions.Settings\BISolutionsProject.Settings.csproj", "{05EC8AB0-E6BD-4D42-8203-BBE817C88B01}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BISolutionsProject.Shared.Common", "BISolutionsProject\Shared\BISolutionsProject.Shared.Common\BISolutionsProject.Shared.Common.csproj", "{95F767A8-DFE4-48B2-B2AE-3C91DB215837}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BISolutionsProject.Shared.Common", "BISolutionsProject\Shared\BISolutionsProject.Shared.Common\BISolutionsProject.Shared.Common.csproj", "{95F767A8-DFE4-48B2-B2AE-3C91DB215837}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BISolutionsProject.Api.Settings", "BISolutionsProject\Systems\Api\BISolutionsProject.Api.Settings\BISolutionsProject.Api.Settings.csproj", "{A82D7F20-51D2-4450-8989-C5A1D9552E06}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BISolutionsProject.Services.FirstApp", "BISolutionsProject\Services\BISolutionsProject.Services.FirstApp\BISolutionsProject.Services.FirstApp.csproj", "{09C29C27-8336-41E3-A0CA-EBA37C53EA44}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BISolutionsProject.Services.FirstAppResponse", "BISolutionsProject\Services\BISolutionsProject.Services.FirstAppResponse\BISolutionsProject.Services.FirstAppResponse.csproj", "{E27E2A0E-C3A0-4BBE-B074-38A1FC5D9246}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +47,18 @@ Global
 		{95F767A8-DFE4-48B2-B2AE-3C91DB215837}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{95F767A8-DFE4-48B2-B2AE-3C91DB215837}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{95F767A8-DFE4-48B2-B2AE-3C91DB215837}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A82D7F20-51D2-4450-8989-C5A1D9552E06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A82D7F20-51D2-4450-8989-C5A1D9552E06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A82D7F20-51D2-4450-8989-C5A1D9552E06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A82D7F20-51D2-4450-8989-C5A1D9552E06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09C29C27-8336-41E3-A0CA-EBA37C53EA44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09C29C27-8336-41E3-A0CA-EBA37C53EA44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09C29C27-8336-41E3-A0CA-EBA37C53EA44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09C29C27-8336-41E3-A0CA-EBA37C53EA44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E27E2A0E-C3A0-4BBE-B074-38A1FC5D9246}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E27E2A0E-C3A0-4BBE-B074-38A1FC5D9246}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E27E2A0E-C3A0-4BBE-B074-38A1FC5D9246}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E27E2A0E-C3A0-4BBE-B074-38A1FC5D9246}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -51,6 +69,9 @@ Global
 		{2AB2D502-DD4F-4BC3-BF05-BC320769D147} = {4A51AEB7-8280-4C55-939D-66A8321FADD5}
 		{05EC8AB0-E6BD-4D42-8203-BBE817C88B01} = {8B84C5B2-DBBA-4FB5-A43C-152D3D423EDF}
 		{95F767A8-DFE4-48B2-B2AE-3C91DB215837} = {8B84C5B2-DBBA-4FB5-A43C-152D3D423EDF}
+		{A82D7F20-51D2-4450-8989-C5A1D9552E06} = {425B5FD8-3A7B-47BC-B820-EF6B6039E395}
+		{09C29C27-8336-41E3-A0CA-EBA37C53EA44} = {4A51AEB7-8280-4C55-939D-66A8321FADD5}
+		{E27E2A0E-C3A0-4BBE-B074-38A1FC5D9246} = {4A51AEB7-8280-4C55-939D-66A8321FADD5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {675F770A-DA66-4E11-A2D8-E8986E940D70}
