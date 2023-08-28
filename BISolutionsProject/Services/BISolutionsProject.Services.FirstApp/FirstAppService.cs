@@ -14,7 +14,7 @@ public class FirstAppService : IFirstAppService
         var counter = 0;
         var sumOfNumbers = list.ListOfNumbers.Sum(val =>
         {
-            if (val % 2 != 0) return 0;
+            if (val % 2 != 0 || val == 0) return 0;
             counter++;
             if (counter - 2 != 0) return 0;
             counter = 0;

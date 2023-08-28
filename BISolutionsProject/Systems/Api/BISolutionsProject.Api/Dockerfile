@@ -14,6 +14,8 @@ COPY ["BISolutionsProject/Services/BISolutionsProject.Services.SecondAppResponse
 COPY ["BISolutionsProject/Services/BISolutionsProject.Services.SecondApp/BISolutionsProject.Services.SecondApp.csproj", "BISolutionsProject/Services/BISolutionsProject.Services.SecondApp/"]
 COPY ["BISolutionsProject/Services/BISolutionsProject.Services.Settings/BISolutionsProject.Services.Settings.csproj", "BISolutionsProject/Services/BISolutionsProject.Services.Settings/"]
 COPY ["BISolutionsProject/Shared/BISolutions.Settings/BISolutionsProject.Settings.csproj", "BISolutionsProject/Shared/BISolutions.Settings/"]
+COPY ["BISolutionsProject/Services/BISolutionsProject.Services.ThirdAppResponse/BISolutionsProject.Services.ThirdAppResponse.csproj", "BISolutionsProject/Services/BISolutionsProject.Services.ThirdAppResponse/"]
+COPY ["BISolutionsProject/Services/BISolutionsProject.Services.ThirdApp/BISolutionsProject.Services.ThirdApp.csproj", "BISolutionsProject/Services/BISolutionsProject.Services.ThirdApp/"]
 COPY ["BISolutionsProject/Systems/Api/BISolutionsProject.Api.Settings/BISolutionsProject.Api.Settings.csproj", "BISolutionsProject/Systems/Api/BISolutionsProject.Api.Settings/"]
 RUN dotnet restore "BISolutionsProject/Systems/Api/BISolutionsProject.Api/BISolutionsProject.Api.csproj"
 COPY . .
