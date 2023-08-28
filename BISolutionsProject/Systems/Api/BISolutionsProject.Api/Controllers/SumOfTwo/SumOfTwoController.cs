@@ -16,7 +16,7 @@ namespace BISolutionsProject.Api.Controllers.SumOfTwo;
 /// </summary>
 [ApiController]
 [Produces("application/json")]
-[Route("api/v{version:apiVersion}/firstApp")]
+[Route("api/v{version:apiVersion}/first-app")]
 [ApiVersion("0.1")]
 public class SumOfTwoController : ControllerBase
 {
@@ -46,11 +46,11 @@ public class SumOfTwoController : ControllerBase
     }
 
     /// <summary>
-    /// Executes main logic for controller
+    /// Gets sum of every second even element in a list
     /// </summary>
     /// <returns></returns>
-    [HttpPost("sumOfTwo")]
-    [ProducesResponseType(typeof(int), 200)]
+    [HttpPost("sum-of-two")]
+    [ProducesResponseType(typeof(SumOfNumbersResponse), 200)]
     [MapToApiVersion("0.1")]
     public Task<SumOfNumbersResponse> GetSumOfTwo([FromBody] ListOfNumbersModel list)
     {

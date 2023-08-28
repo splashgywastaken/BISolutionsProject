@@ -17,6 +17,8 @@
     <ProjectReference Include="..\..\..\Services\BISolutionsProject.Services.SecondAppResponse\BISolutionsProject.Services.SecondAppResponse.csproj" />
     <ProjectReference Include="..\..\..\Services\BISolutionsProject.Services.SecondApp\BISolutionsProject.Services.SecondApp.csproj" />
     <ProjectReference Include="..\..\..\Services\BISolutionsProject.Services.Settings\BISolutionsProject.Services.Settings.csproj" />
+    <ProjectReference Include="..\..\..\Services\BISolutionsProject.Services.ThirdAppResponse\BISolutionsProject.Services.ThirdAppResponse.csproj" />
+    <ProjectReference Include="..\..\..\Services\BISolutionsProject.Services.ThirdApp\BISolutionsProject.Services.ThirdApp.csproj" />
     <ProjectReference Include="..\..\..\Shared\BISolutionsProject.Shared.Common\BISolutionsProject.Shared.Common.csproj" />
     <ProjectReference Include="..\BISolutionsProject.Api.Settings\BISolutionsProject.Api.Settings.csproj" />
   </ItemGroup>

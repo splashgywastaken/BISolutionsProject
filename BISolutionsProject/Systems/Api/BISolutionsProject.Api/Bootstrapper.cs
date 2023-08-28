@@ -4,6 +4,8 @@ using BISolutionsProject.Services.FirstApp;
 using BISolutionsProject.Services.FirstAppResponse;
 using BISolutionsProject.Services.SecondApp;
 using BISolutionsProject.Services.SecondAppResponse;
+using BISolutionsProject.Services.ThirdApp;
+using BISolutionsProject.Services.ThirdAppResponse;
 
 namespace BISolutionsProject.Api;
 
@@ -26,7 +28,9 @@ public static class Bootstrapper
             .AddFirstAppService()
             .AddFirstAppResponseService()
             .AddSecondAppService()
-            .AddSecondAppResponseService();
+            .AddSecondAppResponseService()
+            .AddThirdAppService()
+            .AddThirdAppResponseService();
 
         return services;
     }

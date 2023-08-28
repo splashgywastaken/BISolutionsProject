@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using BISolutionsProject.Api.Controllers.Palindrom.Models;
+using BISolutionsProject.Api.Controllers.SumOfTwo.Models;
 using BISolutionsProject.Services.SecondApp;
 using BISolutionsProject.Services.SecondApp.Models;
 using BISolutionsProject.Services.SecondAppResponse;
@@ -11,7 +12,7 @@ namespace BISolutionsProject.Api.Controllers.Palindrom;
 /// A controller used for second task 
 /// </summary>
 [Produces("application/json")]
-[Route("api/v{version:apiVersion}/secondApp")]
+[Route("api/v{version:apiVersion}/second-app")]
 [ApiController]
 [ApiVersion("0.1")]
 public class PalindromController : ControllerBase
@@ -45,15 +46,17 @@ public class PalindromController : ControllerBase
     /// Method used to check a string for being a palinrom 
     /// </summary>
     /// <returns></returns>
-    [HttpGet("palindrom")]
-    public async Task<PalindromCheckResponse> CheckStringForBeingPalindrom(
-        [FromQuery] PalindromCheckModel palindromCheckModel
+    [HttpPost("palindrom")]
+    [ProducesResponseType(typeof(PalindromCheckResponse), 200)]
+    [MapToApiVersion("0.1")]
+    public Task<PalindromCheckResponse> CheckStringForBeingPalindrom(
+        [FromBody] PalindromCheckModel palindromCheckModel
         )
     {
         var serviceResult = _secondAppService.CheckStringForPalindrom(palindromCheckModel);
         var serviceResponse = _secondAppResponseService.GeneratePalindromCheckResponse(serviceResult);
         var response = _mapper.Map<PalindromCheckResponse>(serviceResponse);
 
-        return response;
+        return Task.FromResult(response);
     }
 }

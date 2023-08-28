@@ -66,12 +66,27 @@
         </member>
         <member name="T:BISolutionsProject.Api.Controllers.Palindrom.Models.PalindromCheckResponse">
             <summary>
-            A model used for response in PalindromController methods
+            A model used to return data from controller method
+            </summary>
+        </member>
+        <member name="P:BISolutionsProject.Api.Controllers.Palindrom.Models.PalindromCheckResponse.Message">
+            <summary>
+            A message for check process
             </summary>
         </member>
         <member name="P:BISolutionsProject.Api.Controllers.Palindrom.Models.PalindromCheckResponse.IsPalindrom">
             <summary>
-            Check for if a string is a palindrom or not
+            A boolean value used to determine if a string is palindrom or not
+            </summary>
+        </member>
+        <member name="T:BISolutionsProject.Api.Controllers.Palindrom.Models.PalindromCheckResponseProfile">
+            <summary>
+            Mapper profile class for PalindromCheckResponse
+            </summary>
+        </member>
+        <member name="M:BISolutionsProject.Api.Controllers.Palindrom.Models.PalindromCheckResponseProfile.#ctor">
+            <summary>
+            Constructor with mapping defenitions
             </summary>
         </member>
         <member name="T:BISolutionsProject.Api.Controllers.Palindrom.PalindromController">
@@ -79,18 +94,60 @@
             A controller used for second task 
             </summary>
         </member>
-        <member name="M:BISolutionsProject.Api.Controllers.Palindrom.PalindromController.#ctor(Microsoft.Extensions.Logging.ILogger{BISolutionsProject.Api.Controllers.Palindrom.PalindromController},AutoMapper.IMapper)">
+        <member name="M:BISolutionsProject.Api.Controllers.Palindrom.PalindromController.#ctor(Microsoft.Extensions.Logging.ILogger{BISolutionsProject.Api.Controllers.Palindrom.PalindromController},AutoMapper.IMapper,BISolutionsProject.Services.SecondApp.ISecondAppService,BISolutionsProject.Services.SecondAppResponse.ISecondAppResponseService)">
             <summary>
             A constructor used for intialization of PalindromController through DI
             </summary>
             <param name="logger"></param>
             <param name="mapper"></param>
+            <param name="secondAppService"></param>
+            <param name="secondAppResponseService"></param>
         </member>
-        <member name="M:BISolutionsProject.Api.Controllers.Palindrom.PalindromController.CheckStringForBeingPalindrom(System.String)">
+        <member name="M:BISolutionsProject.Api.Controllers.Palindrom.PalindromController.CheckStringForBeingPalindrom(BISolutionsProject.Services.SecondApp.Models.PalindromCheckModel)">
             <summary>
             Method used to check a string for being a palinrom 
             </summary>
-            <param name="stringToCheck"></param>
+            <returns></returns>
+        </member>
+        <member name="T:BISolutionsProject.Api.Controllers.SortList.Models.SortedListResponse">
+            <summary>
+            A model used for responses from controller 
+            </summary>
+        </member>
+        <member name="P:BISolutionsProject.Api.Controllers.SortList.Models.SortedListResponse.List">
+            <summary>
+            List itself
+            </summary>
+        </member>
+        <member name="T:BISolutionsProject.Api.Controllers.SortList.Models.SortListResponseProfile">
+            <summary>
+            Mapping profile class for sorted list response
+            </summary>
+        </member>
+        <member name="M:BISolutionsProject.Api.Controllers.SortList.Models.SortListResponseProfile.#ctor">
+            <summary>
+            Constructor with mapping definitions
+            </summary>
+        </member>
+        <member name="T:BISolutionsProject.Api.Controllers.SortList.SortListController">
+            <summary>
+            Controller for third task (third app) which used to sort List using Tree
+            </summary>
+        </member>
+        <member name="M:BISolutionsProject.Api.Controllers.SortList.SortListController.#ctor(Microsoft.Extensions.Logging.ILogger{BISolutionsProject.Api.Controllers.SortList.SortListController},AutoMapper.IMapper,BISolutionsProject.Services.ThirdApp.IThirdAppService,BISolutionsProject.Services.ThirdAppResponse.IThirdAppResponseService)">
+            <summary>
+            Constructor for DI
+            </summary>
+            <param name="logger"></param>
+            <param name="mapper"></param>
+            <param name="thirdAppService"></param>
+            <param name="thirdAppResponseService"></param>
+        </member>
+        <member name="M:BISolutionsProject.Api.Controllers.SortList.SortListController.SortList(BISolutionsProject.Services.ThirdApp.Models.ListDataModel)">
+            <summary>
+            Method that sorts list of integers using binary tree
+            </summary>
+            <param name="list"></param>
             <returns></returns>
             <exception cref="T:System.NotImplementedException"></exception>
         </member>
@@ -130,7 +187,7 @@
         </member>
         <member name="M:BISolutionsProject.Api.Controllers.SumOfTwo.SumOfTwoController.GetSumOfTwo(BISolutionsProject.Services.FirstApp.Models.ListOfNumbersModel)">
             <summary>
-            Executes main logic for controller
+            Gets sum of every second even element in a list
             </summary>
             <returns></returns>
         </member>
